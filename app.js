@@ -1,10 +1,10 @@
-const express = require('express');
+const express = require('xpress');
 const path = require('path'); // Para manejar rutas de archivos
 const app = express();
 const port = process.env.PORT || 8080;
 
 // Establecer EJS como motor de plantillas
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 
 // Servir archivos estáticos (como imágenes) desde la carpeta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
