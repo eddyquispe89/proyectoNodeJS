@@ -9,7 +9,7 @@ app.set('view engine', 'ejs')
 // Servir archivos estáticos (como imágenes) desde la carpeta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Ruta principal
+// Ruta principal n
 app.get('/', (req, res) => {
   res.render('index', { 
     title: 'Clase de APP Service - WME', 
